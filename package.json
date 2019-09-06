@@ -1,0 +1,22 @@
+{
+  "name": "catia",
+  "version": "0.0.1",
+  "description": "in development counseling app",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElderINTERalliance/catia.git"
+  },
+  "author": "kevinuulong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElderINTERalliance/catia/issues"
+  },
+  "homepage": "https://github.com/ElderINTERalliance/catia#readme",
+  "devDependencies": {
+    "electron": "^6.0.7"
+  }
+}
