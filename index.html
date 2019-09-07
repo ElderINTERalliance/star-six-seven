@@ -6,9 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
+    <script src="fitty.min.js"></script>
+    <script src="main.js"></script>
     <title>catia</title>
 </head>
 <body>
-    <h1>anonymous counseling</h1>
+
+    <div class="draggable"></div>
+
+    <h1 class="toptext" id="toptextmain">anonymous </br>counseling</h1>
+
+    <div id="resumesession" class="button"><h2 class="buttontext">resume session</h2></div>
+    <div id="newsession" class="button"><h2 class="buttontext">new session</h2></div>
+
+    <div id="newsessionnext" class="button"><h2 class="buttontext">next</h2></div>
+
+    <div id="counselors">
+        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/kinross.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mrs. Kinross</h2></div>
+        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/driehaus.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mr. Driehaus</h2></div>
+        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/listerman.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mr. Listerman</h2></div>
+        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/graham.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mrs. Graham</h2></div>
+        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/montgomery.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Ms. Montgomery</h2></div>
+    </div>
+
+    <div class="bottomgradient"></div>
 </body>
 </html>

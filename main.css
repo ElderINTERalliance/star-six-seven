@@ -1,9 +1,148 @@
+.draggable{
+    -webkit-app-region: drag;
+    width: 100%;
+    height: 25px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    width: 70%;
+    width: 100%;
     overflow: hidden;
-    font-size: 72px;
+    font-size: 80px;
     margin: 0px;
     color: #35353f;
+    line-height: 90px;
+}
+
+.toptext{
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.button, .button:hover{
+    background-image: linear-gradient(to right, #2e9eea, #3666ea);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600px;
+    color: white;
+    /*width: 200px;*/
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#resumesession{
+    background-image: linear-gradient(to right, #ff7f6a, #ff6a94);
+    position: absolute;
+    right: 235px;
+    bottom: 25px;
+}
+
+h2.buttontext{
+    margin: 0px;
+}
+
+img{
+    -webkit-user-drag: none;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    -webkit-user-select: none;
+}
+
+body::-webkit-scrollbar{
+    background-color: gray;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #d7d7ff;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #35353f4d;
+    width: 10px;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-button{
+    display: none;
+}
+
+#newsessionnext{
+    display: none;
+    position: fixed;
+}
+
+#counselors{
+    width: 70%;
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 150px));
+    padding: 25px;
+}
+
+.counselor{
+    width: 150px;
+    height: 150px;
+    background-color: #d7d7ff;
+    border-radius: 150px;
+    counter-increment: grid-item;
+    position: relative;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.counselorname{
+    position: absolute;
+    bottom: -30px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #35353f;
+}
+
+.selected, .counselor:hover{
+    background-image: linear-gradient(to right, #2e9eea, #3666ea);
+}
+
+.imagecontainer{
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 148px;
+}
+
+.counselorimg{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.bottomgradient{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    background-image: url("bottomgradientlight.svg");
+    background-repeat: repeat-x;
+    background-position: -100px;
+    pointer-events: none;
 }
