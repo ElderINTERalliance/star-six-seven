@@ -14,21 +14,46 @@
 
     <div class="draggable"></div>
 
-    <h1 class="toptext" id="toptextmain">anonymous </br>counseling</h1>
-
-    <div id="resumesession" class="button"><h2 class="buttontext">resume session</h2></div>
-    <div id="newsession" class="button"><h2 class="buttontext">new session</h2></div>
-
-    <div id="newsessionnext" class="button"><h2 class="buttontext">next</h2></div>
-
-    <div id="counselors">
-        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/kinross.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mrs. Kinross</h2></div>
-        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/driehaus.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mr. Driehaus</h2></div>
-        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/listerman.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mr. Listerman</h2></div>
-        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/graham.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mrs. Graham</h2></div>
-        <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/montgomery.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Ms. Montgomery</h2></div>
+    <div id="pinscreen">
+        <h1 class="toptext" id="toptextmain">enter your </br>pin</h1>
+        <div id="login" class="button"><h2 class="buttontext">login</h2></div>
+        <input id="pin" class="pin" placeholder="" autofocus maxlength="7">
     </div>
 
+
+    <div id="newsessionscreen">
+        <h1 class="toptext" id="toptextmain">choose a <br/>counselor</h1>
+        <div id="newsessionnext" class="button"><h2 class="buttontext">next</h2></div>
+
+        <div id="counselors">
+            <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/kinross.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mrs. Kinross</h2></div>
+            <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/driehaus.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mr. Driehaus</h2></div>
+            <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/listerman.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mr. Listerman</h2></div>
+            <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/graham.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Mrs. Graham</h2></div>
+            <div class="counselor" onclick="this.classList.add('selected')"><div class="imagecontainer"><img class="counselorimg" src="counselors/montgomery.png" onerror="this.style.display='none'"/></div><h2 class="counselorname">Ms. Montgomery</h2></div>
+        </div>
+    </div>
+    
+    <!--<div id="newsession" class="button"><h2 class="buttontext">new session</h2></div>-->
+
     <div class="bottomgradient"></div>
+    <div id="mainmenu">
+        <div id="sidebar">
+            <div id="sidebartitle"><h3>conversations</h3></div>
+            <div id="conversations">
+                <div class="conversation"><p>kinross-badger-cub</p></div>
+                <div class="conversation"><p>driehaus-happy-rat</p></div>
+                <div class="conversation"><p>kinross-small-hat</p></div>
+                <div class="conversation"><p>graham-mad-ape</p></div>
+                <div class="conversation"><p>listerman-sad-tub</p></div>
+                <div class="conversation"><p>montgomery-sad-goat</p></div>
+            </div>
+            <div id="newsession" class="button"><h2 class="buttontext">new session</h2></div>
+        </div>
+
+        <div id="conversationwindow">
+            <div class="conversationtitle"><h1 class="conversationtitletext">conversation</h1></div>
+        </div>
+    </div>
 </body>
 </html>

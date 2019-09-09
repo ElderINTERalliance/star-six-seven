@@ -10,6 +10,10 @@
     padding: 0px;
 }
 
+*:focus{
+    outline: none;
+}
+
 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -24,6 +28,19 @@ h1{
 .toptext{
     padding-top: 15px;
     padding-left: 30px;
+}
+
+.pin{
+    border: #d7d7ff 2px solid;
+    border-radius: 5px;
+    width: 400px;
+    height: 75px;
+    font-family: 'Montserrat', sans-serif;
+    color: #35353f;
+    font-size: 50px;
+    margin-left: 25px;
+    margin-top: 25px;
+    padding: 10px;
 }
 
 .button, .button:hover{
@@ -64,6 +81,7 @@ body{
     overflow-x: hidden;
     margin: 0px;
     -webkit-user-select: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -87,13 +105,12 @@ body::-webkit-scrollbar-button{
 }
 
 #newsessionnext{
-    display: none;
     position: fixed;
 }
 
 #counselors{
     width: 70%;
-    display: none;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 150px));
     padding: 25px;
 }
@@ -145,4 +162,55 @@ body::-webkit-scrollbar-button{
     background-repeat: repeat-x;
     background-position: -100px;
     pointer-events: none;
+}
+
+#sidebar{
+    background-image: linear-gradient(to right, #2e9eea, #3666ea);
+    width: 33%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 20;
+}
+
+#newsession{
+    background-image: linear-gradient(to right, #ff7f6a, #ff6a94);
+    position: fixed;
+    width: 155px;
+    padding-right: 10px;
+    padding-left: 10px;
+    left: 25px;
+}
+
+#sidebartitle{
+    margin-left: 25px;
+    font-size: 2.5vw;
+}
+
+#conversations{
+    margin-left: 40px;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+#conversationwindow{
+    width: 67%;
+    margin-left: 33%;
+}
+
+.conversationtitle{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#mainmenu{
+    display: none;
+}
+
+#newsessionscreen{
+    display: none;
 }
