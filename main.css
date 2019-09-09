@@ -180,6 +180,7 @@ body::-webkit-scrollbar-button{
 #newsession{
     background-image: linear-gradient(to right, #ff7f6a, #ff6a94);
     position: fixed;
+    bottom: 25px;
     width: 155px;
     padding-right: 10px;
     padding-left: 10px;
@@ -213,4 +214,23 @@ body::-webkit-scrollbar-button{
 
 #newsessionscreen{
     display: none;
+}
+
+.messagebox{
+    width: 55%;
+    position: fixed;
+    bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #d7d7ff;
+    color: #35353f;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    padding: 7px;
+    padding-left: 8px;
+    padding-right: 25px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 20;
 }

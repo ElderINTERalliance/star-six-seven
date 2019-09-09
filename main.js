@@ -25,5 +25,4 @@ window.onload = function(){
         });
         fitties[0].fit();
     });
-
 };
