@@ -2,6 +2,8 @@ var {app, BrowserWindow} = require('electron')
 
 function createwindow(){
     let win = new BrowserWindow({
+        minWidth: 720,
+        minHeight: 480,
         frame: false,
         width: 720,
         height: 480,
