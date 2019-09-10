@@ -55,7 +55,7 @@ h1{
     padding-bottom: 10px;
     text-align: center;
     border-radius: 5px;
-    position: absolute;
+    position: fixed;
     right: 25px;
     bottom: 25px;
     cursor: pointer;
@@ -201,6 +201,8 @@ body::-webkit-scrollbar-button{
 #conversationwindow{
     width: 67%;
     margin-left: 33%;
+    padding-bottom: 100px;
+    overflow: auto;
 }
 
 .conversationtitle{
@@ -216,21 +218,69 @@ body::-webkit-scrollbar-button{
     display: none;
 }
 
-.messagebox{
-    width: 55%;
-    position: fixed;
-    bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    background-color: #d7d7ff;
-    color: #35353f;
+#messagebox{
+    width: 80%;
     font-size: 20px;
     border: none;
-    border-radius: 5px;
     height: 35px;
     padding: 7px;
     padding-left: 8px;
-    padding-right: 25px;
+    background-color: #2e9fea00;
     font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word;
+}
+
+
+.messagebox{
+    width: 56%;
+    position: fixed;
+    bottom: 25px;
     z-index: 20;
+    background-color: #d7d7ff;
+    color: #35353f;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+
+.receivedmessage{
+    max-width: 50%;
+    min-width: 20px;
+    background: #d7d7ff;
+    color: #35353f;
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 5px;
+    margin: 25px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    clear: both;
+    float: left;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.sentmessage{
+    max-width: 50%;
+    min-width: 20px;
+    background-image: linear-gradient(to right, #2e9eea, #3666ea);
+    color: white;
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 5px;
+    float: right;
+    margin: 25px;
+    clear: both;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+
+}
+
+p.sentmessagetext, p.receivedmessagetext{
+    padding: 0px;
+    margin: 0px;
 }

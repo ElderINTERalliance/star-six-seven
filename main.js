@@ -25,4 +25,8 @@ window.onload = function(){
         });
         fitties[0].fit();
     });
+    document.getElementById("sendmessage").addEventListener('click', function(){
+        var message = document.getElementById("messagebox").value;
+        document.getElementById("messages").innerHTML += "<div class='sentmessage'>"+message+"</div>";
+    })
 };
