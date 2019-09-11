@@ -1,10 +1,5 @@
 window.onload = function(){
     document.getElementById("newsession").addEventListener('click', function(){
-        /*document.getElementById("toptextmain").innerHTML = "select a </br>counselor";
-        document.getElementById("newsession").style.display = "none";
-        document.getElementById("resumesession").style.display = "none";
-        document.getElementById("newsessionnext").style.display = "block";
-        document.getElementById("counselors").style.display = "grid";*/
         document.getElementById("newsessionscreen").style.display = "block";
         document.getElementById("mainmenu").style.display = "none";
         var fitties = fitty('.counselorname');
@@ -12,14 +7,8 @@ window.onload = function(){
     });
 
     document.getElementById("login").addEventListener('click', function(){
-        /*document.getElementById("toptextmain").innerHTML = "select a </br>counselor";
-        document.getElementById("login").style.display = "none";
-        document.getElementById("pin").style.display = "none";
-        document.getElementById("newsessionnext").style.display = "block";
-        document.getElementById("counselors").style.display = "grid";*/
         document.getElementById("mainmenu").style.display = "block";
         document.getElementById("pinscreen").style.display = "none";
-        console.log("test");
         var fitties = fitty('.conversationtitletext', {
             maxSize: 60
         });
@@ -27,6 +16,22 @@ window.onload = function(){
     });
     document.getElementById("sendmessage").addEventListener('click', function(){
         var message = document.getElementById("messagebox").value;
-        document.getElementById("messages").innerHTML += "<div class='sentmessage'>"+message+"</div>";
+        if(message != ""){
+            document.getElementById("messages").innerHTML += "<div class='sentmessage'>"+message+"</div>";
+            document.getElementById("messagebox").value = "";
+        }
+    })
+    document.getElementById("messagebox").addEventListener('keydown', function(event){
+        if(event.keyCode === 13){
+            event.preventDefault();
+            document.getElementById("sendmessage").click();
+        }
     })
 };
+
+function choosecounselor(element){
+    if(document.querySelector('.counselor.selected')){
+        document.querySelector('.counselor.selected').classList.remove('selected');
+    }
+    element.classList.add('selected');
+}
