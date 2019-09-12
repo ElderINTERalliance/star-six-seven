@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+    <link id="stylesheet" href="main.css" rel="stylesheet">
     <script src="fitty.min.js"></script>
     <script src="main.js"></script>
     <title>catia</title>
@@ -53,12 +53,17 @@
 
         <div id="conversationwindow">
             <div class="conversationtitle"><h1 class="conversationtitletext">conversation</h1></div>
-            <div class="messagebox"><input id="messagebox" type="text" placeholder="type a message..."><div class="button" id="sendmessage"><h2 class="buttontext">send</h2></div></div>
+            <div class="messagebox"><input id="messagebox" type="text" autofocus placeholder="type a message..."><div class="button" id="sendmessage"><h2 class="buttontext">send</h2></div></div>
             <div id="messages">
                 <div class="receivedmessage">How can I help you today?</div>
                 <div class="sentmessage">I am having trouble with my family. What can I do about them?</div>
             </div>
         </div>
+    </div>
+
+    <div id="contextmenu">
+        <div class="ctxitem" id="darkmode">dark mode</div>
+        <div class="ctxitem">settings</div>
     </div>
 </body>
 </html>

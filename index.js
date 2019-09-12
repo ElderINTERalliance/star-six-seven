@@ -1,4 +1,5 @@
-var {app, BrowserWindow} = require('electron')
+var {app, BrowserWindow} = require('electron'),
+    jetpack = require('fs-jetpack');
 
 function createwindow(){
     let win = new BrowserWindow({
@@ -15,5 +16,4 @@ function createwindow(){
 
     win.loadFile("index.html")
 }
-
 app.on('ready', createwindow)
