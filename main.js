@@ -1,4 +1,5 @@
-const jetpack = require("fs-jetpack");
+const jetpack = require("fs-jetpack"),
+    remote = require('electron').remote;
 
 window.onload = function(){
     document.getElementById("newsession").addEventListener('click', function(){
@@ -69,6 +70,9 @@ window.onload = function(){
             jetpack.write('settings.json', JSON.stringify(settings));
             lightmode();
         }
+    })
+    this.document.getElementById("x").addEventListener('click', function(){
+        remote.getCurrentWindow().close();
     })
 };
 

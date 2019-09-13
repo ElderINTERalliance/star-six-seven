@@ -1,6 +1,6 @@
 .draggable{
     -webkit-app-region: drag;
-    width: 100%;
+    width: calc(100% - 35px);
     height: 25px;
     position: fixed;
     top: 0px;
@@ -162,7 +162,7 @@ input{
     z-index: 10;
     width: 100%;
     height: 100px;
-    background-image: url("bottomgradientdark.svg");
+    background-image: url("images/bottomgradientdark.svg");
     background-repeat: repeat-x;
     background-position: -100px;
     pointer-events: none;

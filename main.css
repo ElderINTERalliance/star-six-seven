@@ -1,6 +1,6 @@
 .draggable{
     -webkit-app-region: drag;
-    width: 100%;
+    width: calc(100% - 35px);
     height: 25px;
     position: fixed;
     top: 0px;
@@ -40,7 +40,7 @@ h1{
     margin-top: 25px;
     padding: 10px;
     color: #35353f;
-    background-color: #d7d7d7;
+    background-color: #d7d7ff;
 }
 
 .button, .button:hover{
@@ -158,7 +158,7 @@ body::-webkit-scrollbar-button{
     z-index: 10;
     width: 100%;
     height: 100px;
-    background-image: url("bottomgradientlight.svg");
+    background-image: url("images/bottomgradientlight.svg");
     background-repeat: repeat-x;
     background-position: -100px;
     pointer-events: none;
@@ -304,10 +304,12 @@ p.sentmessagetext, p.receivedmessagetext{
 }
 
 #x{
-    float: right;
     padding: 10px;
     cursor: pointer;
     height: 25px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
 }
 
 #x:hover{
