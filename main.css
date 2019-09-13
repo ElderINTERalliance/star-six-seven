@@ -30,7 +30,7 @@ h1{
 }
 
 .pin{
-    border: #d7d7ff 2px solid;
+    border: #d7d7ff00 2px solid;
     border-radius: 5px;
     width: 400px;
     height: 75px;
@@ -39,7 +39,8 @@ h1{
     margin-left: 25px;
     margin-top: 25px;
     padding: 10px;
-    background-color: #FFFFFF00;
+    color: #35353f;
+    background-color: #d7d7d7;
 }
 
 .button, .button:hover{
@@ -300,4 +301,15 @@ p.sentmessagetext, p.receivedmessagetext{
 .ctxitem:hover{
     background-image: linear-gradient(to right, #2e9eea, #3666ea);
     color: white;
+}
+
+#x{
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+    height: 25px;
+}
+
+#x:hover{
+    filter: invert(58%) sepia(71%) saturate(4376%) hue-rotate(327deg) brightness(108%) contrast(93%);
 }
