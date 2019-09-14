@@ -1,6 +1,6 @@
 .draggable{
     -webkit-app-region: drag;
-    width: calc(100% - 35px);
+    width: calc(100% - 45px);
     height: 25px;
     position: fixed;
     top: 0px;
@@ -81,7 +81,7 @@ body{
     margin: 0px;
     -webkit-user-select: none;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #d7d7ff;
     background-color: #35353f;
 }
 
@@ -117,7 +117,7 @@ body::-webkit-scrollbar-button{
 }
 
 input{
-    color: white;
+    color: #d7d7ff;
 }
 
 .counselor{
@@ -309,10 +309,12 @@ p.sentmessagetext, p.receivedmessagetext{
 }
 
 #x{
-    float: right;
     padding: 10px;
     cursor: pointer;
     height: 25px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
 }
 
 #x:hover{

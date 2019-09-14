@@ -1,5 +1,5 @@
-var {app, BrowserWindow} = require('electron'),
-    jetpack = require('fs-jetpack');
+var {app, BrowserWindow} = require('electron');
+require('update-electron-app');
 
 function createwindow(){
     let win = new BrowserWindow({

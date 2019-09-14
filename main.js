@@ -1,5 +1,8 @@
 const jetpack = require("fs-jetpack"),
-    remote = require('electron').remote;
+    remote = require('electron').remote,
+    mongoose = require('mongoose');
+
+
 
 window.onload = function(){
     document.getElementById("newsession").addEventListener('click', function(){
@@ -16,12 +19,14 @@ window.onload = function(){
             maxSize: 60
         });
         fitties[0].fit();
+        window.scrollTo(0,document.body.scrollHeight);
     });
     document.getElementById("sendmessage").addEventListener('click', function(){
         var message = document.getElementById("messagebox").value;
         if(message != ""){
             document.getElementById("messages").innerHTML += "<div class='sentmessage'>"+message+"</div>";
             document.getElementById("messagebox").value = "";
+            window.scrollTo(0,document.body.scrollHeight);
         }
     })
     document.getElementById("messagebox").addEventListener('keydown', function(event){
