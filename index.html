@@ -34,31 +34,49 @@
         </div>
     </div>
 
+    <div id="detailsscreen">
+        <h1 class="toptext">conversation <br/>details</h1>
+        <table id="convdetails">
+            <tr>
+              <td class="convdetailsimg" id="selectedcounselor" rowspan="2"><div class="imagecontainer"><img class="counselorimg" id="detailsimg" src="images/counselors/kinross.png" onerror="this.style.display='none'"/></div></td>
+              <td>
+                  <table style="padding-top: 25px;">
+                    <td class="convdetailstextname text">counselor name:</td>
+                    <th class="text" id="counselornamevar">Mrs. Kinross</th>
+                </table>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                  <table style="padding-bottom: 25px;">
+                        <td class="text">conversation id:</td>
+                        <th class="text">kinross-badger-cub</th>
+                  </table>
+              </td>
+            </tr>
+        </table>
+        <div id="startnewsession" class="button"><h2 class="buttontext">next</h2></div>
+        <div id="convdetailsback" class="button"><h2 class="buttontext">back</h2></div>
+    </div>
+
     <div class="bottomgradient"></div>
     <div id="mainmenu">
         <div id="sidebar">
             <div id="sidebartitle"><h3>conversations</h3></div>
             <div id="conversations">
                 <div class="conversation"><p>kinross-badger-cub</p></div>
-                <div class="conversation"><p>driehaus-happy-rat</p></div>
-                <div class="conversation"><p>kinross-small-hat</p></div>
-                <div class="conversation"><p>graham-mad-ape</p></div>
-                <div class="conversation"><p>listerman-sad-tub</p></div>
-                <div class="conversation"><p>montgomery-sad-goat</p></div>
+                <div class="conversation"><p>driehaus-happy-lion</p></div>
+                <div class="conversation"><p>listerman-green-straw</p></div>
             </div>
             <div id="newsession" class="button"><h2 class="buttontext">new session</h2></div>
         </div>
 
         <div id="conversationwindow">
-            <div class="conversationtitle"><h1 class="conversationtitletext">kinross-badger-cub</h1></div>
+            <!--<div class="conversationtitle"><h1 class="conversationtitletext">kinross-badger-cub</h1></div>-->
             <div class="messagebox"><input id="messagebox" type="text" autofocus placeholder="type a message..."><div class="button" id="sendmessage"><h2 class="buttontext">send</h2></div></div>
             <div id="messages">
                 <div class="receivedmessage">How can I help you today?</div>
                 <div class="sentmessage">I am having trouble with my family. What can I do about them?</div>
-                <div class="receivedmessage">How can I help you today?</div>
-                <div class="receivedmessage">How can I help you today?</div>
-                <div class="receivedmessage">How can I help you today?</div>
-                <div class="receivedmessage">How can I help you today?</div>
             </div>
         </div>
     </div>

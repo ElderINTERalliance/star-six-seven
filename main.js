@@ -10,6 +10,7 @@ window.onload = function(){
         document.getElementById("mainmenu").style.display = "none";
         var fitties = fitty('.counselorname');
         fitties[0].fit();
+        window.scrollTo(0,0);
     });
 
     document.getElementById("login").addEventListener('click', function(){
@@ -79,6 +80,20 @@ window.onload = function(){
     this.document.getElementById("x").addEventListener('click', function(){
         remote.getCurrentWindow().close();
     })
+    this.document.getElementById("newsessionnext").addEventListener('click', function(){
+        var selected = document.querySelector('.counselor.selected');
+        detailsscreen(selected);
+    })
+
+    this.document.getElementById("startnewsession").addEventListener('click', function(){
+        document.getElementById("detailsscreen").style.display = "none";
+        document.getElementById("mainmenu").style.display = "block";
+    })
+
+    this.document.getElementById("convdetailsback").addEventListener('click', function(){
+        document.getElementById("detailsscreen").style.display = "none";
+        document.getElementById("newsessionscreen").style.display = "block";
+    })
 };
 
 function choosecounselor(element){
@@ -86,6 +101,41 @@ function choosecounselor(element){
         document.querySelector('.counselor.selected').classList.remove('selected');
     }
     element.classList.add('selected');
+}
+
+function detailsscreen(element){
+    document.getElementById("newsessionscreen").style.display = "none";
+    document.getElementById("detailsscreen").style.display = "block";
+    switch (element.id) {
+        case "kinross":
+            document.getElementById("counselornamevar").innerHTML = "Mrs. Kinross";
+            document.getElementById("detailsimg").src = "images/counselors/kinross.png"            
+            break;
+
+        case "driehaus":
+            document.getElementById("counselornamevar").innerHTML = "Mr. Driehaus";
+            document.getElementById("detailsimg").src = "images/counselors/driehaus.png"
+            break;
+
+        case "listerman":
+            document.getElementById("counselornamevar").innerHTML = "Mr. Listerman";
+            document.getElementById("detailsimg").src = "images/counselors/listerman.png"
+            break;
+
+        case "graham":
+            document.getElementById("counselornamevar").innerHTML = "Mrs. Graham";
+            document.getElementById("detailsimg").src = "images/counselors/graham.png"
+            break;
+
+        case "montgomery":
+            document.getElementById("counselornamevar").innerHTML = "Mrs. Montgomery";
+            document.getElementById("detailsimg").src = "images/counselors/montgomery.png"
+            break;
+    
+        default:
+            document.getElementById("counselornamevar").value = "Mrs. Kinross"
+            break;
+    }
 }
 
 function darkmode(){

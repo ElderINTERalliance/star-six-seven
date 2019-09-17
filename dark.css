@@ -320,3 +320,50 @@ p.sentmessagetext, p.receivedmessagetext{
 #x:hover{
     filter: invert(58%) sepia(71%) saturate(4376%) hue-rotate(327deg) brightness(108%) contrast(93%);
 }
+
+#detailsscreen{
+    display: none;;
+}
+
+#convdetails{
+    padding: 25px;
+    width: 1%;
+    white-space: nowrap;
+}
+
+.convdetailsimg{
+    width: 150px;
+    height: 150px;
+    background-color: #3a3a4c;
+    border-radius: 150px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+
+td.text, th.text{
+    width: 1%;
+    white-space: nowrap;
+    padding-left: 25px;
+    font-size: 25px;
+    text-align: left;
+}
+
+#counselornamevar{
+    position: relative;
+    left: -25px;
+}
+
+#convdetailsback{
+    background-image: linear-gradient(to right, #ff7f6a, #ff6a94);
+    position: fixed;
+    bottom: 25px;
+    width: 75px;
+    padding-right: 10px;
+    padding-left: 10px;
+    right: 135px;
+}
+
+#messages{
+    margin-top: 45px;
+}
