@@ -1,10 +1,10 @@
-const jetpack = require("fs-jetpack"),
+window.onload = function(){
+
+    const jetpack = require("fs-jetpack"),
     remote = require('electron').remote,
     mongoose = require('mongoose');
 
 
-
-window.onload = function(){
     document.getElementById("newsession").addEventListener('click', function(){
         document.getElementById("newsessionscreen").style.display = "block";
         document.getElementById("mainmenu").style.display = "none";
