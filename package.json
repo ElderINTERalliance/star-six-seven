@@ -30,7 +30,7 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "fs-jetpack": "^2.2.2",
-    "mongoose": "^5.7.1",
+    "mongoose": "^5.7.5",
     "update-electron-app": "^1.5.0"
   },
   "config": {
